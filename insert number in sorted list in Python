@@ -1,0 +1,12 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Insert n at right place in array")
+
+def sort_arr(arr,n):
+    index=len(arr)
+    for i in range(index):  #range starts from 0 exclusive of last element
+        if n <= arr[i]:
+            arr = arr[:i] + [n] + arr[i:]
+    return arr
+    
+print(sort_arr([2,4,5,9],7))
