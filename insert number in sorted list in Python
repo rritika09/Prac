@@ -10,3 +10,17 @@ def sort_arr(arr,n):
     return arr
     
 print(sort_arr([2,4,5,9],7))
+
+
+# Second method : bisect
+import bisect
+ 
+def insert(list, n):
+    bisect.insort(list, n)
+    return list
+    
+# Third method : insert element into the list and sort the list
+def insert(list, n):
+  list.append(n)
+  sorted_list = sorted(list)
+  return sorted_list
