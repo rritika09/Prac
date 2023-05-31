@@ -6,6 +6,6 @@ s='aabbritdaabb'
 t='aabb'
 index=[]
 for i in range(len(s)):
-    if(s.startswith(t,i)):
+    if(s.startswith(t,i)):       #startswith(value,start,end)
         index.append(i)
 print(index)
