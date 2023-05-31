@@ -1,0 +1,11 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+# Find index of every occurance of subsctring in given string.
+print("Hello world")
+s='aabbritdaabb'
+t='aabb'
+index=[]
+for i in range(len(s)):
+    if(s.startswith(t,i)):
+        index.append(i)
+print(index)
