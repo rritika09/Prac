@@ -9,5 +9,7 @@ for i in range(len(num)):
     if diff in num:
         tgt_index.append(num[i])
         tgt_index.append(diff)
+        j=num.index(diff)
+        print(j)
         break
 print(tgt_index)
