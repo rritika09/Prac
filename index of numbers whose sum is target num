@@ -10,6 +10,6 @@ for i in range(len(num)):
         tgt_index.append(num[i])
         tgt_index.append(diff)
         j=num.index(diff)
-        print(j)
+        print("Index of numbers: ",i,j)
         break
 print(tgt_index)
