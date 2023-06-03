@@ -1,0 +1,16 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Hello world")
+
+#Method 1 : List 
+str = "Life is beautiful"
+stck = str.split()   # split converts string to list
+print(type(stck))    # print list
+print(stck)
+stck_o = []
+print(len(stck))
+for i in range(len(stck)-1, -1, -1): #range(start,stop,step)
+    stck_o.append(stck[i]) #stop is not included, start is included
+print(stck_o)
+
+#Method 2 : List as Stack
