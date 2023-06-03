@@ -1,0 +1,17 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Hello world")
+print("Min distance btw 2 words in a list")
+
+S = ["the", "quick", "brown", "fox", "quick"]
+word1 = "the"
+word2 = "fox"
+for i in range(len(S)):
+    if S[i]==word1:
+        word1_ind=i
+        print("Found at",word1_ind)
+    if S[i]==word2:
+        word2_ind=i
+        print("Found at",word2_ind)
+distance = word2_ind - word1_ind
+print("Distance is",distance)
