@@ -1,0 +1,25 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Hello world")
+print("Roman to Integer")
+
+dict =  {"I":1,"IV":4,"V":5,"IX":9}
+input=["I","IV","V","V","I"]
+out = []
+for i in range(len(input)):
+    print(input[i])
+    for x in dict:
+        if x==input[i]:
+            print("Y")
+            out.append(dict[x])
+        elif x==input[i]:
+            out.append[4]
+        elif x==input[i]:
+            out.append[5]
+        elif x==input[i]:
+            out.append[9]
+print(out)
+ot = 0
+for i in range(len(out)):
+    ot = out[i] + ot
+print(ot)
