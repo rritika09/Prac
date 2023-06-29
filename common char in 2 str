@@ -1,0 +1,14 @@
+print("Common char in 2 string in alphabetical order")
+
+a = 'abcdddef'
+b = 'ghjdfe'
+lst,lst1 = {},{}
+for i in range(len(a)):
+    lst[a[i]]=a.count(a[i])
+print(lst)
+for j in range(len(b)):
+    lst1[b[j]]=b.count(b[j])
+print(lst1)
+for k in lst:
+    if k in lst1 and lst[k] >= lst1[k]:
+        print(k)
