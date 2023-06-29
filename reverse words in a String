@@ -14,3 +14,18 @@ for i in range(len(stck)-1, -1, -1): #range(start,stop,step)
 print(stck_o)
 
 #Method 2 : List as Stack
+st = "world is round"
+st_lst=st.split()
+print("st_lst",st_lst)
+newst = st.split()[::-1]
+out = []
+print(newst)
+# for i in range(len(newst)):
+#     out.append(newst[i])
+# print(out)
+print(" ".join(newst))
+print("Second method")
+for i in range(len(st_lst)):
+    out.append(st_lst.pop())
+print("through stack",out)
+print(" ".join(out))
