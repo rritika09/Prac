@@ -1,0 +1,19 @@
+print("Print common char in 2 strings")
+
+a = 'geeks'
+b = 'eekfsjej'
+dicta={}
+dictb,out={},[]
+for i in range(len(a)):
+    dicta[a[i]]=a.count(a[i])
+print(dicta)
+for j in range(len(b)):
+    dictb[b[j]]=b.count(b[j])
+print(dictb)
+for i in dicta:
+    for j in dictb:   
+        if i==j and dicta[i]==dictb[j]:
+            print(i,j)
+
+
+
