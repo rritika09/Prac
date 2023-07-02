@@ -1,0 +1,12 @@
+print("Print common characters")
+
+a = 'geeeeks'
+counta = {}
+for i in range(len(a)):
+    counta[a[i]] = a.count(a[i])
+print(counta)
+lst = []
+for k in counta:
+    if counta[k] == 1:
+        lst.append(k)
+print(lst)
