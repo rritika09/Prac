@@ -1,0 +1,16 @@
+# Remove duplicates from list through hashmap
+print("Hello world")
+p = [10,20,10,9,90,9]
+o = []
+d = {}
+c=0
+for i in range(len(p)):
+    d[p[i]]=1+d.get(p[i],0)
+print(d)
+print(len(d))
+for j in d:
+    print(j,d[j])
+    if d[j]==1:
+        o.append(j)
+print(o)
+    
