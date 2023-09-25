@@ -1,0 +1,26 @@
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        s_num,t_num = {},{}
+        if len(s) != len(t):
+            return False
+        else:
+            s_list = list(s)
+            t_list = list(t)
+            print(s_list,t_list)
+            for i in range(len(s_list)):
+                s_num[s_list[i]] = s_list.count(s_list[i])
+            for j in range(len(t_list)):
+                t_num[t_list[j]] = t_list.count(t_list[j])
+        print(s_num,t_num)
+        # for i in range(len(s_num)):
+        #     for k in s_num:
+        #         if k in t_num and s_num[k] == t_num[k]:
+        #             print(s_num[k],t_num[k])
+        #             print("Anagrams")
+        if s_num == t_num:
+            return True
+        else:
+            return False
+
+s = Solution()
+s.isAnagram('rac','car')
