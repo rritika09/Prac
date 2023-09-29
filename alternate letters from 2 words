@@ -1,0 +1,11 @@
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        word3 = []
+        if len(word1) >= len(word2):
+            for i in range(len(word1)):
+                word3.append(word1[i])
+                word3.append(word2[i])
+            word3="".join(word3)
+            return word3
+s = Solution()
+print("Expected output is ",s.mergeAlternately('abc','pqr'))
